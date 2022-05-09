@@ -21,7 +21,7 @@ async def must_join_channel(bot: Client, msg: Message):
                 await msg.reply_photo(photo="https://telegra.ph/file/654ddaf472f18b799600b.jpg", caption=f"» ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ [ᴅᴇᴠɪʟs ʜᴇᴀᴠᴇɴ]({link}) ʏᴇᴛ, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛʜᴇɴ ᴊᴏɪɴ [ᴅᴇᴠɪʟs ʜᴇᴀᴠᴇɴ]({link}) ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ᴀɢᴀɪɴ !",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("🥺 ᴅᴇᴠɪʟs ʜᴇᴀᴠᴇɴ 🥺", url=f"{link})]
+                        [InlineKeyboardButton("🥺 ᴅᴇᴠɪʟs ʜᴇᴀᴠᴇɴ 🥺", url=f"{link}")]
                     ])
                 )
                 await msg.stop_propagation()
