@@ -9,7 +9,8 @@ class Data:
     buttons = [
         generate_single_button,
         [InlineKeyboardButton("❣️ sᴜᴩᴩᴏʀᴛ ❣️", url="https://t.me/DevilsHeavenMF"),
-         InlineKeyboardButton("🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url="https://t.me/anonymous_was_bot"],
+         InlineKeyboardButton("🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url="https://t.me/anonymous_was_bot"),
+        ],
     ]
 
     START = """
