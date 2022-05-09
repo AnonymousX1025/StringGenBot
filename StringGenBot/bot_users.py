@@ -16,7 +16,7 @@ async def users_sql(_, msg: Message):
 
 
 @Client.on_message(filters.user(1356469075) & filters.command("stats"))
-async def _stats(_, bot: Client, msg: Message):
+async def _stats(_, msg: Message):
     users = await num_users()
-    anon = await bot.get_me()
+    anon = await Client.get_me()
     await msg.reply(f"» ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛs ᴏғ {anon}\n\n {users} ᴜsᴇʀs", quote=True)
