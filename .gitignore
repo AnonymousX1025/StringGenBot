@@ -1,0 +1,6 @@
+.idea/
+__pycache__/
+.gitattributes
+*.pyc
+test.py
+.env

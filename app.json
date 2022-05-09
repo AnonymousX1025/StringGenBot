@@ -1,0 +1,56 @@
+{
+  "name": "sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
+  "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
+  "logo": "https://telegra.ph/file/654ddaf472f18b799600b.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+  "repository": "https://github.com/AnonymousR1025/StringGenBot",
+  "env": {
+    "ENVIRONMENT": {
+      "description": "Don't change ANYTHING.",
+      "required": true,
+      "value": "ANYTHING"
+    },
+    "API_ID": {
+      "description": "Get this value from my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "MUST_JOIN": {
+      "description": "Username of a group or channel for which you want to set force sub.(without @)",
+      "required": true,
+      "value: "DevilsHeavenMF"
+    },
+    "BOT_TOKEN": {
+      "description": "Get this value from @BotFather",
+      "required": true,
+      "value": ""
+    }
+  }
+}
