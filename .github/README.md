@@ -46,5 +46,6 @@ Atleast Give A Star and Fork The Repo 🖤
 
 ## 💖 ᴄʀᴇᴅɪᴛs
 - » [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://github.com/AnonymousR1025)
+- » [Stark](https://github.com/StarkBotsIndustries)
 - » [Pyrogram Devs](https://github.com/pyrogram) for [Pyrogram](https://github.com/pyrogram/pyrogram)
 - » [LonamiWebs](https://github.com/LonamiWebs) for [Telethon](https://github.com/LonamiWebs/Telethon)
