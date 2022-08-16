@@ -42,6 +42,11 @@
       "required": true,
       "value": ""
     },
+    "OWNER_ID": {
+      "description": "Telegram id of the person who will known as owner of the bot.",
+      "required": true,
+      "value": ""
+    },
     "MUST_JOIN": {
       "description": "Username of a group or channel for which you want to set force sub.(without @)",
       "required": true,
