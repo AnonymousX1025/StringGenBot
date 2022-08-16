@@ -1,5 +1,7 @@
 from pyrogram.types import Message
 from pyrogram import Client, filters
+
+from config import OWNER_ID
 from StringGenBot.db import SESSION
 from StringGenBot.db.users_sql import Users, num_users
 
@@ -15,7 +17,7 @@ async def users_sql(_, msg: Message):
             SESSION.close()
 
 
-@Client.on_message(filters.user(1356469075) & filters.command("stats"))
+@Client.on_message(filters.user(OWNER_ID) & filters.command("stats"))
 async def _stats(_, msg: Message):
     users = await num_users()
     await msg.reply(f"» ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛs ᴏғ sᴛʀɪɴɢ ɢᴇɴ ʙᴏᴛ :\n\n {users} ᴜsᴇʀs", quote=True)
