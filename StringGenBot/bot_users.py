@@ -1,7 +1,7 @@
 from pyrogram.types import Message
 from pyrogram import Client, filters
 
-from config import OWNER_ID
+from env import OWNER_ID
 from StringGenBot.db import SESSION
 from StringGenBot.db.users_sql import Users, num_users
 
