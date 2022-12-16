@@ -4,5 +4,5 @@ psycopg2==2.9.3
 Telethon==1.25.2
 pyromod==1.5
 pyrogram1==0.*
-TgCrypto==1.2.3
+TgCrypto==1.2.5
 pyrogram==2.0.57
