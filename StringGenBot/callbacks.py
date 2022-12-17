@@ -1,34 +1,21 @@
 import traceback
-from data import Data
-from pyrogram import Client
+
+from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
+
 from StringGenBot.generate import generate_session, ask_ques, buttons_ques
 
 
-# Callbacks
-@Client.on_callback_query()
+@Client.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram1|pyrogram_bot|telethon_bot|telethon)$"))
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
-    user = await bot.get_me()
-    # user_id = callback_query.from_user.id
-    mention = user.mention
-    query = callback_query.data.lower()
-    if query.startswith("home"):
-        if query == 'home':
-            chat_id = callback_query.from_user.id
-            message_id = callback_query.message.id
-            await bot.edit_message_text(
-                chat_id=chat_id,
-                message_id=message_id,
-                text=Data.START.format(callback_query.from_user.mention, mention),
-                reply_markup=InlineKeyboardMarkup(Data.buttons),
-            )
-    elif query == "generate":
+    query = callback_query.matches[0].group(1)
+    if query == "generate":
         await callback_query.answer()
         await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
     elif query.startswith("pyrogram") or query.startswith("telethon"):
         try:
             if query == "pyrogram":
-                await callback_query.answer("» ᴛʜᴇ ᴩʏʀᴏɢʀᴀᴍ ᴠ2 sᴛʀɪɴɢ sᴇssɪᴏɴ ᴡɪʟʟ ᴏɴʟʏ ᴡᴏʀᴋ ɪɴ ᴛʜᴇ ʙᴏᴛ's ᴡʜɪᴄʜ ᴀʀᴇ ᴜᴩɢʀᴀᴅᴇᴅ ᴀᴛ ᴩʏʀᴏɢʀᴀᴍ ᴠ2 !", show_alert=True)
+                await callback_query.answer()
                 await generate_session(bot, callback_query.message)
             elif query == "pyrogram1":
                 await callback_query.answer()

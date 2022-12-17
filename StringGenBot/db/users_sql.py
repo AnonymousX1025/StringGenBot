@@ -1,25 +1,24 @@
-from sqlalchemy import Column, BigInteger
-from StringGenBot.db import BASE, SESSION
+from StringGenBot.db import db
+
+usersdb = db.users
 
 
-class Users(BASE):
-    __tablename__ = "users"
-    __table_args__ = {'extend_existing': True}
-    user_id = Column(BigInteger, primary_key=True)
-
-    def __init__(self, user_id, channels=None):
-        self.user_id = user_id
-        self.channels = channels
-
-    # def __repr__(self):
-    #     return "<User {} {} {} ({})>".format(self.thumbnail, self.thumbnail_status, self.video_to, self.user_id)
+async def is_served_user(user_id: int) -> bool:
+    user = await usersdb.find_one({"user_id": user_id})
+    if not user:
+        return False
+    return True
 
 
-Users.__table__.create(checkfirst=True)
+async def get_served_users() -> list:
+    users_list = []
+    async for user in usersdb.find({"user_id": {"$gt": 0}}):
+        users_list.append(user)
+    return users_list
 
 
-async def num_users():
-    try:
-        return SESSION.query(Users).count()
-    finally:
-        SESSION.close()
+async def add_served_user(user_id: int):
+    is_served = await is_served_user(user_id)
+    if is_served:
+        return
+    return await usersdb.insert_one({"user_id": user_id})
