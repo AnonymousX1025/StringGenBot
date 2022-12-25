@@ -4,5 +4,5 @@ pyromod==1.5
 pyrogram==2.0.70
 pyrogram1==0.1.0
 python-dotenv==0.21.0
-telethon==1.26.0
+telethon==1.26.1
 TgCrypto==1.2.5
