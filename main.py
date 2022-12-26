@@ -1,4 +1,5 @@
 import config
+import time
 import logging
 from pyrogram import Client, idle
 from pyromod import listen  # type: ignore
@@ -8,6 +9,7 @@ logging.basicConfig(
     level=logging.WARNING, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 
+StartTime = time.time()
 app = Client(
     "Anonymous",
     api_id=config.API_ID,
