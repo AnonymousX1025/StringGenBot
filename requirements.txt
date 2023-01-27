@@ -4,6 +4,6 @@ psutil==5.9.4
 pyromod==1.5
 pyrogram==2.0.97
 pyrogram1==0.1.0
-python-dotenv==0.21.0
+python-dotenv==0.21.1
 telethon==1.26.1
 TgCrypto==1.2.5
