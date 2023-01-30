@@ -6,7 +6,7 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 from StringGenBot.generate import generate_session, ask_ques, buttons_ques
 
 
-@Client.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram1|pyrogram_bot|telethon_bot|telethon)$"))
+@Client.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram_bot|telethon_bot|telethon)$"))
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
     query = callback_query.matches[0].group(1)
     if query == "generate":
@@ -17,9 +17,6 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             if query == "pyrogram":
                 await callback_query.answer()
                 await generate_session(bot, callback_query.message)
-            elif query == "pyrogram1":
-                await callback_query.answer()
-                await generate_session(bot, callback_query.message, old_pyro=True)
             elif query == "pyrogram_bot":
                 await callback_query.answer("» ᴛʜᴇ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴇᴅ ᴡɪʟʟ ʙᴇ ᴏғ ᴩʏʀᴏɢʀᴀᴍ ᴠ2.", show_alert=True)
                 await generate_session(bot, callback_query.message, is_bot=True)
