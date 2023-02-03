@@ -5,8 +5,8 @@
 ### 🥵 sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ
   <a href="https://github.com/TheChampu/TheChampu"><img alt="Website" src="https://img.shields.io/badge/ᴄʜᴧᴍᴘᴜ ꭙᴅﮩ٨ـﮩﮩ٨ـ♡-blue"></a>
  
-[![Stars](https://img.shields.io/github/stars/TheChampu/ChampuStringBot?style=social)](https://github.comTheChampu/ChampuStringBot)
-  [![Forks](https://img.shields.io/github/forks/TheChampu/ChampuStringBot?style=social)](https://github.comTheChampu/ChampuStringBot/fork)
+[![Stars](https://img.shields.io/github/stars/TheChampu/ChampuStringBot?style=social)](https://github.com/TheChampu/ChampuStringBot)
+  [![Forks](https://img.shields.io/github/forks/TheChampu/ChampuStringBot?style=social)](https://github.com/TheChampu/ChampuStringBot/fork)
 
 ### 🛠️ ʟᴀɴɢᴜᴀɢᴇs ᴀɴᴅ ᴛᴏᴏʟs
 
