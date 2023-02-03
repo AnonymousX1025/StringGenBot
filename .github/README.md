@@ -5,8 +5,8 @@
 ### 🥵 sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ
   <a href="https://github.com/TheChampu/TheChampu"><img alt="Website" src="https://img.shields.io/badge/ᴄʜᴧᴍᴘᴜ ꭙᴅﮩ٨ـﮩﮩ٨ـ♡-blue"></a>
  
-[![Stars](https://img.shields.io/github/stars/TheChampu/ChampuString?style=social)](https://github.com/github/TheChampu/ChampuString)
-  [![Forks](https://img.shields.io/github/forks/AnonymousX1025/StringGenBot?style=social)](https://github.com/github/TheChampu/ChampuString/fork)
+[![Stars](https://img.shields.io/github/stars/TheChampu/ChampuStringBot?style=social)](https://github.com/github/TheChampu/ChampuStringBot)
+  [![Forks](https://img.shields.io/github/forks/TheChampu/ChampuStringBot?style=social)](https://github.com/github/TheChampu/ChampuStringBot/fork)
 
 ### 🛠️ ʟᴀɴɢᴜᴀɢᴇs ᴀɴᴅ ᴛᴏᴏʟs
 
@@ -25,7 +25,7 @@
 
 ### 🚀 ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ
   
-  <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.comgithub/TheChampu/ChampuString"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+  <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/TheChampu/ChampuStringBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 
