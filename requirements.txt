@@ -1,7 +1,7 @@
 motor==3.1.1
 psutil==5.9.4
 pyromod==1.5
-pyrogram==2.0.97
+pyrogram==2.0.99
 python-dotenv==0.21.1
 telethon==1.26.1
 tgcrypto==1.2.5
