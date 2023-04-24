@@ -13,11 +13,6 @@
   }],
   "repository": "https://github.com/AnonymousX1025/StringGenBot",
   "env": {
-    "ENVIRONMENT": {
-      "description": "Don't change ANYTHING.",
-      "required": true,
-      "value": "ANYTHING"
-    },
     "API_ID": {
       "description": "Get this value from my.telegram.org/apps.",
       "required": true,
@@ -37,11 +32,6 @@
       "description": "Get this value from cloud.mongodb.com",
       "required": true,
       "value": ""
-    },
-    "MUST_JOIN": {
-      "description": "Username of a group or channel for which you want to set force sub.(without @)",
-      "required": true,
-      "value": "DevilsHeavenMF"
     },
     "BOT_TOKEN": {
       "description": "Get this value from @BotFather",
