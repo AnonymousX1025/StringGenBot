@@ -1,5 +1,4 @@
 import asyncio
-from asyncio.exceptions import TimeoutError
 
 from pyrogram import Client, filters
 from oldpyro import Client as Client1
@@ -30,6 +29,7 @@ from telethon.errors import (
 )
 from telethon.sessions import StringSession
 from telethon.tl.functions.channels import JoinChannelRequest
+from pyromod.listen.listen import ListenerTimeout
 
 from config import SUPPORT_CHAT
 from StringGen import Anony
@@ -55,7 +55,7 @@ async def gen_session(
             filters=filters.text,
             timeout=300,
         )
-    except TimeoutError:
+    except ListenerTimeout:
         return await Anony.send_message(
             user_id,
             "» ᴛɪᴍᴇᴅ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ ᴏғ 5 ᴍɪɴᴜᴛᴇs.\n\nᴘʟᴇᴀsᴇ sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ ᴀɢᴀɪɴ.",
@@ -81,7 +81,7 @@ async def gen_session(
             filters=filters.text,
             timeout=300,
         )
-    except TimeoutError:
+    except ListenerTimeout:
         return await Anony.send_message(
             user_id,
             "» ᴛɪᴍᴇᴅ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ ᴏғ 5 ᴍɪɴᴜᴛᴇs.\n\nᴘʟᴇᴀsᴇ sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ ᴀɢᴀɪɴ.",
@@ -107,7 +107,7 @@ async def gen_session(
             filters=filters.text,
             timeout=300,
         )
-    except TimeoutError:
+    except ListenerTimeout:
         return await Anony.send_message(
             user_id,
             "» ᴛɪᴍᴇᴅ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ ᴏғ 5 ᴍɪɴᴜᴛᴇs.\n\nᴘʟᴇᴀsᴇ sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ ᴀɢᴀɪɴ.",
@@ -162,7 +162,7 @@ async def gen_session(
         )
         if await cancelled(otp):
             return
-    except TimeoutError:
+    except ListenerTimeout:
         return await Anony.send_message(
             user_id,
             "» ᴛɪᴍᴇ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ ᴏғ 10 ᴍɪɴᴜᴛᴇs.\n\nᴩʟᴇᴀsᴇ sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ ʏᴏᴜʀ sᴇssɪᴏɴ ᴀɢᴀɪɴ.",
