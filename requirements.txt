@@ -1,4 +1,4 @@
-motor==3.1.2
+motor==3.2.0
 pyromod==2.0.0
 oldpyro==0.1.0
 pyrogram==2.0.106
