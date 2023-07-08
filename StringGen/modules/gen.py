@@ -195,7 +195,7 @@ async def gen_session(
                 filters=filters.text,
                 timeout=300,
             )
-        except TimeoutError:
+        except ListenerTimeout:
             return Anony.send_message(
                 user_id,
                 "» ᴛɪᴍᴇᴅ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ ᴏғ 5 ᴍɪɴᴜᴛᴇs.\n\nᴘʟᴇᴀsᴇ sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ ᴀɢᴀɪɴ.",
