@@ -1,5 +1,6 @@
-.idea/
-__pycache__/
-.gitattributes
-*.pyc
 .env
+*.log
+venv/
+*.session
+__pycache__/
+*.session-journal

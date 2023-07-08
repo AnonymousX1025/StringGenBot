@@ -1,42 +1,48 @@
 {
-  "name": "sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
+  "name": "String Gen Bot",
   "description": "A Telegram Bot to generate Telethon and Pyrogram String Session.",
   "logo": "https://telegra.ph/file/654ddaf472f18b799600b.jpg",
   "keywords": [
-    "telegram",
-    "bot",
-    "python",
-    "pyrogram"
+      "python3",
+      "telegram",
+      "session",
+      "stringbot",
+      "telegram-bot",
+      "pyrogram",
+      "telethon"
   ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
   "repository": "https://github.com/AnonymousX1025/StringGenBot",
   "env": {
     "API_ID": {
-      "description": "Get this value from my.telegram.org/apps.",
-      "required": true,
-      "value": ""
+      "description": "Get this value from https://my.telegram.org",
+      "value": "",
+      "required": true
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org/apps.",
-      "required": true,
-      "value": ""
+      "description": "Get this value from https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "A Bot's token from Botfather",
+      "value": "",
+      "required": true
     },
     "OWNER_ID": {
-      "description": "Telegram id of the person who will known as owner of the bot.",
-      "required": true,
-      "value": ""
+      "description": "Fill your user id here. (Must be integer)",
+      "value": "",
+      "required": true
     },
     "MONGO_DB_URI": {
       "description": "Get this value from cloud.mongodb.com",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN": {
-      "description": "Get this value from @BotFather",
-      "required": true,
-      "value": ""
+      "value": "",
+      "required": true
     }
-  }
+  },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "stack": "container"
 }
