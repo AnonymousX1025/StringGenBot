@@ -11,7 +11,7 @@
         "pyrogram",
         "telethon"
     ],
-    "repository": "https://github.com/AnonymousX1025/StringGenBot",
+    "repository": "https://github.com/JIYOXCRY/StringGenBot",
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
