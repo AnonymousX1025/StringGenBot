@@ -1,7 +1,7 @@
-motor==3.2.0
+motor==3.6.0
 pyromod==2.0.0
 oldpyro==0.1.0
 pyrogram==2.0.106
-python-dotenv==1.0.0
-telethon==1.28.5
+python-dotenv==1.0.1
+telethon==1.37.0
 tgcrypto==1.2.5
