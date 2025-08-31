@@ -13,18 +13,8 @@
     ],
     "repository": "https://github.com/AnonymousX1025/StringGenBot",
     "env": {
-      "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "",
-        "required": true
-      },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
+        "description": "Get this value from @BotFather on telegram",
         "value": "",
         "required": true
       },
@@ -33,7 +23,7 @@
         "value": "",
         "required": true
       },
-      "MONGO_DB_URI": {
+      "MONGO_URL": {
         "description": "Get this value from cloud.mongodb.com",
         "value": "",
         "required": true

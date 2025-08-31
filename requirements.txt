@@ -1,7 +1,7 @@
-motor==3.6.0
-pyromod==2.0.0
-oldpyro==0.1.0
-pyrogram==2.0.106
-python-dotenv==1.0.1
-telethon==1.37.0
-tgcrypto==1.2.5
+convopyro~=0.5
+kurigram>=2.2.9
+meval==2.5
+pymongo<=4.14.1
+python-dotenv>=1.1.1
+telethon>=1.40.0
+pytgcrypto>=1.2.11
